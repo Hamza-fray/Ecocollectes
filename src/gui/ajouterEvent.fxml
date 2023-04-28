@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="ajouterPane" prefHeight="533.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AjouterEventController">
+   <children>
+      <VBox prefHeight="533.0" prefWidth="265.0" style="-fx-background-color: cadetblue;">
+         <children>
+            <ImageView fitHeight="130.0" fitWidth="265.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../../xampp/htdocs/EcoCollectes-Desktop/src/assets/logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="130.0" fitWidth="265.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <TextField id="tfTitle" fx:id="tfTitle" layoutX="465.0" layoutY="32.0" promptText="Titre" />
+      <Label layoutX="344.0" layoutY="37.0" text="Titre" />
+      <TextField id="tfDescription" fx:id="tfDescription" layoutX="465.0" layoutY="81.0" prefHeight="162.0" prefWidth="150.0" promptText="Description" />
+      <Label layoutX="342.0" layoutY="153.0" text="Description" />
+      <Label layoutX="344.0" layoutY="295.0" prefHeight="21.0" prefWidth="58.0" text="Date de fin" />
+      <Button id="ajouterBtn" fx:id="tfAjouterBtn" layoutX="447.0" layoutY="431.0" mnemonicParsing="false" onAction="#ajouterEvent" style="-fx-background-color: green; -fx-border-radius: 35px;" text="Ajouter" textFill="#fcfcfc" />
+      <Label layoutX="344.0" layoutY="256.0" prefHeight="21.0" prefWidth="58.0" text="Date debut" />
+      <DatePicker id="tfDatedebut" fx:id="tfDatedebut" layoutX="465.0" layoutY="254.0" />
+      <DatePicker fx:id="tfDatefin" layoutX="465.0" layoutY="293.0" />
+      <Hyperlink layoutX="312.0" layoutY="468.0" onAction="#redirectToLogin" text="liste des events" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="registerPane" prefHeight="533.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.afficherController">
+   <children>
+      <VBox prefHeight="533.0" prefWidth="265.0" style="-fx-background-color: cadetblue;">
+         <children>
+            <ImageView fitHeight="130.0" fitWidth="265.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </VBox>
+      <Label layoutX="344.0" layoutY="37.0" text="Titre" />
+      <Label layoutX="342.0" layoutY="153.0" text="Description" />
+      <Label layoutX="344.0" layoutY="295.0" prefHeight="21.0" prefWidth="58.0" text="Date de fin" />
+      <Button id="registerBtn" fx:id="registerBtn" layoutX="385.0" layoutY="482.0" mnemonicParsing="false" onAction="#register" style="-fx-background-color: green; -fx-border-radius: 35px;" text="Modiier" textFill="#fcfcfc" />
+      <Label layoutX="344.0" layoutY="365.0" text="Profile image" />
+      <Label layoutX="344.0" layoutY="256.0" prefHeight="21.0" prefWidth="58.0" text="Date debut" />
+      <Button id="registerBtn" fx:id="registerBtn2" layoutX="516.0" layoutY="482.0" mnemonicParsing="false" onAction="#register" style="-fx-background-color: red; -fx-border-radius: 35px;" text="Supprimer" textFill="#fcfcfc" />
+   </children>
+</AnchorPane>
